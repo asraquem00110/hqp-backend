@@ -7,9 +7,9 @@ const cors = require('cors')
 const corsOptions = {
       // origin: `http://localhost:${process.env.CORS_PORT_SOURCE}`,
       //// enable all sources/clients
-      // origin: '*',
+      origin: '*',
       // // dynamic source of origin
-      origin: [`http://localhost:${process.env.CORS_PORT_SOURCE}`,`http://localhost:${process.env.CORS_PORT_SOURCE_MOBILE}`],
+      // origin: [`http://localhost:${process.env.CORS_PORT_SOURCE}`,`http://localhost:${process.env.CORS_PORT_SOURCE_MOBILE}`],
       // methods: ['GET','POST','OPTIONS','PUT','PATCH','DELETE'],
       // allowedHeaders: ['Origin','X-Requested-With','Content-Type','Accept'],
       // credentials: true,
