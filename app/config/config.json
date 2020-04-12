@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "db_hqp",
-    "host": "127.0.0.1",
+    "username": "b036a51badbf04",
+    "password": "9a7ea5d0",
+    "database": "heroku_703b589facc6153",
+    "host": "us-cdbr-iron-east-01.cleardb.net",
     "dialect": "mariadb",
     "operatorsAliases": false,
     "dialectOptions": {
