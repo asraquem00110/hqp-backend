@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "12.7.0"
+  },
   "name": "hqp_management",
   "version": "1.0.0",
   "description": "Application for managing Home Quarantine pass of each Barangays",
