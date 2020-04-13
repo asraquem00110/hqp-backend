@@ -108,7 +108,8 @@ controller.removeMember = async (req,res,next)=>{
     const destroyResult = await Member.destroy({where:{id: memberdata.id}})
 
     if(destroyResult){
-        const imagepath = `./public/images/families/${memberdata.familyId}/${memberdata.img}`
+        // const imagepath = `./public/images/families/${memberdata.familyId}/${memberdata.img}`
+        const imagepath = `./public/images/families/${memberdata.img}`
         if(memberdata.img != null && memberdata.img != ""){
             fs.unlink(imagepath, function (err) {
                 if (err) throw err;
