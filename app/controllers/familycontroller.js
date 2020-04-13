@@ -136,7 +136,8 @@ controller.savemember = (req,res,next)=>{
 
         if(member.img != null){
             var oldpath = files.imgfile.path;
-            var newpath = `./public/images/families/${member.familyId}`
+            // var newpath = `./public/images/families/${member.familyId}`
+            var newpath = `./public/images/families`
 
             if(!fs.existsSync(newpath)){
                 fs.mkdirSync(newpath)
@@ -192,7 +193,8 @@ controller.newmember = (req,res,next)=>{
             }else{
                 if(member.img != null){
                     var oldpath = files.imgfile.path;
-                    var newpath = `./public/images/families/${member.familyId}`
+                    // var newpath = `./public/images/families/${member.familyId}`
+                    var newpath = `./public/images/families`
         
                     if(!fs.existsSync(newpath)){
                         fs.mkdirSync(newpath)
@@ -253,7 +255,8 @@ controller.updateMember = (req,res,next)=>{
                     // data.img = files.imgfile.name
 
                     var oldpath = files.imgfile.path;
-                    var newpath = `./public/images/families/${fields.familyId}`
+                    // var newpath = `./public/images/families/${member.familyId}`
+                    var newpath = `./public/images/families`
         
                     if(!fs.existsSync(newpath)){
                         fs.mkdirSync(newpath)
